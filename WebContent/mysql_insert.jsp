@@ -31,8 +31,9 @@ Class.forName(driverName).newInstance();
 Connection conn = DriverManager.getConnection(connUrl); 
 Statement stmt = conn.createStatement(); 
 stmt.executeQuery("SET NAMES UTF8"); 
-String insert_sql = "insert into test_url2 values('" + name + "','" + url + "')"; 
-String query_sql = "select * from test_url2"; 
+//String insert_sql = "insert into test_url values('" + name + "','" + url + "')"; 
+String insert_sql = "insert into test_url(name,url,time) values('" + name + "','" + url + "',now())"; 
+String query_sql = "select * from test_url"; 
 
 try { 
 stmt.execute(insert_sql); 

@@ -28,13 +28,6 @@
             float: left;
             background: #EEE8AA;
 		}
-		.mid_left_left{
-			width: 100%;
-            height: 84%;
-            background: #FFFFE0;
-            float: left;
-			margin-top:50px;
-        }
         .mid_right{
             width: 78%;
             height: 100%;
@@ -65,59 +58,361 @@
 			border:1px solid
 			border-color:black black #000000
 			background-color:#DDECFF
-		}
-	
+			}
+		.lay1{ float:left}   
+		.lay2{ float:left}   
+		.lay3{ float:left}
     </style>
 </head>
 <body>
 	<!--页头-->
 	<div class="top">
-	<form action="mysql_insert.jsp"  target="_blank" method="post"> 
-		<div style="padding-left:12px; line-height:4px; height:10px">
-			<br>
-			<p>
-				链接网址
-			</p>
-			<p>
-				标题:
-				<input type="text" id="id_name" name="name" class="tx3" size="26">
-			</p>
-			<p>
-				网址:
-				<input type="text" id="id_url" name="url" class="tx3" size="26">
-			</p>
-		</div>
-		<div style="padding-left:145px;">
-			<button onclick="mysql_insert.jsp;" class="BT2" id="bulj" style="text-decoration: none;">
+				<div class='lay2'>
+					<div style="padding-left:12px; line-height:4px; height:10px">
+						<br>
+						<p>增加目录</p>
+						<p>目录:<input type="text" id="name" class="tx3" size="26"></p>
+						<p>文件:<select style="width: 186px; height: 24px">
+							<option>选择目录</option>
+							<option value="volvo">Volvo</option>
+							<option value="saab">Saab</option>
+							<option value="opel">Opel</option>
+							<option value="audi">Audi</option>
+						</select>
+						</p>
+					</div>
+					<div style="padding-left:145px;">
+						<button onclick="checkfu();" class="BT2" id="bulj" style="text-decoration: none;">
+							增加目录
+						</button>
+					</div>
+				</div>
+			<form action="mysql_insert.jsp"  target="_blank" method="post"> 
 			
-				增加链接
-			</button>
-		</div>
-		</form>
+				<div class='lay1'>
+					<div style="padding-left:65px; line-height:4px; height:10px">
+						<br>
+						<p>链接网址</p>
+						<p>标题:<input type="text" id="id_name" name="name" class="tx3" size="26"></p>
+						<p>网址:<input type="text" id="id_url" name="url" class="tx3" size="26"></p>
+					</div>
+					<div style="padding-left:195px;">
+						<button onclick="mysql_insert.jsp;" class="BT2" id="bulj" style="text-decoration: none;">
+						增加链接
+						</button>
+					</div>
+				</div>
+			</form>
+
+		
 	</div>
 <!--页中-->
 <div class="middle">
-	<!--页中左侧-->
-	<div class="mid_left">
-		<div style="padding-left:12px; line-height:4px; height:10px">
-			<br>
-			<p>
-				增加目录
-			</p>
-			<p>
-				目录:
-				<input type="text" id="name" class="tx3" size="26">
-			</p>
-		</div>
-		<div style="padding-left:145px;">
-			<button onclick="checkfu();" class="BT2" id="bulj" style="text-decoration: none;">
-				增加目录
-			</button>
-		</div>
-		<!--页中左侧下面-->
-		<div class="mid_left_left">
-			<ul style="padding-left:12px;width:252px;height:486px; overflow:scroll;">
+	<div>
+		<div class="mid_left">
+		<p style="text-indent:1.5em"><b>目录列表</b></p>
+			<ul style="height:516px; overflow:auto;">
 				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+								<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+								<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+								<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+								<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+				<li>
+					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
+					<a href="javascript:;" class="mll">
+						小说下载
+					</a>
+				</li>
+								<li>
 					<img src="http://zy.ys168.com/zy/b_old/tp/ml/mlgk.gif">
 					<a href="javascript:;" class="mll">
 						小说下载
@@ -184,11 +479,9 @@
 	<div class="mid_right">
 		<!--页中右侧-左边-->
 		<div class="mid_right_left">
-			<p>
-				小说下载
-			</p>
+			<p style="text-indent:1.5em"><b>链接列表</b></p>
 			<div>
-				<ul style="display:block;list-item;width:689.5px;height:532px; overflow:scroll;"
+				<ul style="display:block;list-item;width:689.5px;height:516px; overflow:auto;"
 				id="ZMm_1530289" class="menu">
 					<li>
 						<img src="http://zy.ys168.com/zy/b_old/tp/wjlx/rar.gif" id="W_10388189"
